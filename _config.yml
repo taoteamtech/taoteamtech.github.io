@@ -1,0 +1,60 @@
+# External gems
+# See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
+gems:
+  - jekyll-archives # Sorry, not GitHub pages friendly!
+  - jekyll-sitemap
+  - jekyll-paginate
+
+exclude:
+  - "/vendor/"
+
+# Site settings
+title: HIVE TEAM
+subtitle: "The HIVE in YanShan University"
+email: zhtao@ysu.edu.cn
+description: >
+  The HIVE in YanShan University
+# Base URL of site (i.e. /blog). It should always start with a slash,
+# and never end with a slash. Set it to a blank value if hosting at the
+# root of your server.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://taoteamtech.github.io" # the base hostname & protocol for your site
+cover: "/assets/header_image.jpg"
+logo: "/assets/logo.png"
+
+# Build settings
+markdown: kramdown
+paginate: 5
+paginate_path: "/page:num/"
+inter_post_navigation: false
+highlightjs_theme: "monokai_sublime"
+
+# Archive settings (see https://github.com/jekyll/jekyll-archives/)
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: 'archive'
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+
+social:
+  - name: 燕山大学信息科学与工程学院
+    icon: map-marker
+    url: http://j.map.baidu.com/IHGNH
+    desc: Find us in baidumap
+
+# Disqus comments
+# disqus_shortname: bencentra
+
+# Google analytics
+# ga_tracking_id: "UA-XXXX-1"
+
+# Category descriptions (for archive pages)
+#descriptions:
+#  - cat: jekyll
+#    desc: "Posts describing Jekyll setup techniques."
+
+#  - cat: dummy
+#    desc: "Just some placeholder posts, lorem ipsum and the rest."
